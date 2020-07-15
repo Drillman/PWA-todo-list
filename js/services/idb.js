@@ -3,15 +3,7 @@ import { openDB } from "idb";
 export default class IdbService {
 
   async initDb() {
-    this.db = await openDB('todolist', 1, {
-      upgrade(db) {
-        // Create a store of objects
-        db.createObjectStore('todos', {
-        // The 'id' property of the object will be the key.
-        keyPath: 'id',
-        });
-      }
-    });
+    this.db = null;
   }
 
   async setTodos(todos) {
