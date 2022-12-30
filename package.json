@@ -35,6 +35,6 @@
     "es-dev-server": "^1.48.1",
     "fake-indexeddb": "^3.1.0",
     "json-server": "^0.16.1",
-    "mocha": "^8.0.1"
+    "mocha": "^8.4.0"
   }
 }
